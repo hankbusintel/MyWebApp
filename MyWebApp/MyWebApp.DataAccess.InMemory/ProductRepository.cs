@@ -69,7 +69,7 @@ namespace MyWebApp.DataAccess.InMemory
 
             if (productToDelete != null)
             {
-                products.Remove(productToDelete)
+                products.Remove(productToDelete);
             }
             else
             {
