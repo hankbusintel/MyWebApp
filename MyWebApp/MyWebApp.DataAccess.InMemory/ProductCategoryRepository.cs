@@ -21,6 +21,7 @@ namespace MyWebApp.DataAccess.InMemory
                 productCategories = new List<ProductCategory>();
             }
         }
+        //abacasdas
 
         public void Commit()
         {
