@@ -1,4 +1,5 @@
-﻿using MyWebApp.Core.Models;
+﻿using MyWebApp.Core.Contract;
+using MyWebApp.Core.Models;
 using MyWebApp.DataAccess.InMemory;
 using System;
 using System.Collections.Generic;
@@ -10,11 +11,11 @@ namespace MyWebApp.WebUI.Controllers
 {
     public class ProductCategoryManagerController : Controller
     {
-        InMemoryRepository<ProductCategory> context;
+        IRepository<ProductCategory> context;
 
-        public ProductCategoryManagerController()
+        public ProductCategoryManagerController(IRepository<ProductCategory> context)
         {
-            context = new InMemoryRepository<ProductCategory>();
+            this.context = context;
         }
         // GET: ProductCategoryManager
         public ActionResult Index()
