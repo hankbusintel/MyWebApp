@@ -52,11 +52,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContext.cs" />
+    <Compile Include="Migrations\202009150108585_Initial.cs" />
+    <Compile Include="Migrations\202009150108585_Initial.designer.cs">
+      <DependentUpon>202009150108585_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyWebApp.Core\MyWebApp.Core.csproj">
+      <Project>{51A4574D-2688-4373-AD19-706F8FD043AD}</Project>
+      <Name>MyWebApp.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202009150108585_Initial.resx">
+      <DependentUpon>202009150108585_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
