@@ -20,7 +20,5 @@ namespace MyWebApp.Core.Models
         public string Category { get; set; }
         public string Image { get; set; }
 
-
-
     }
 }
