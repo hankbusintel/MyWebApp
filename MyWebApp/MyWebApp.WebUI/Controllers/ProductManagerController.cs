@@ -99,7 +99,7 @@ namespace MyWebApp.WebUI.Controllers
                 productToEdit.Description = product.Description;
                 productToEdit.Name = product.Name;
                 productToEdit.Price = product.Price;
-
+                
                 context.Commit();
                 return RedirectToAction("Index");
             }

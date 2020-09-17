@@ -10,7 +10,7 @@ namespace MyWebApp.Core.Models
 {
     public class Product:BaseEntity
     {
-        
+       
         [StringLength(20)]
         [DisplayName("Product Name")]
         public string Name { get; set; }
