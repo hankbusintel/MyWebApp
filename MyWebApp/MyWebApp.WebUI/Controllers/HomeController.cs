@@ -20,6 +20,8 @@ namespace MyWebApp.WebUI.Controllers
             this.productCategories = productCategories;
         }
 
+
+
         public ActionResult Index(string Category=null)
         {
             List<Product> products;
